@@ -1,0 +1,13 @@
+trigger:
+- master
+
+pool:
+  name: Default
+
+steps:
+- script: echo My Gradle Application
+  displayName: 'Run'
+- script: gradle build
+  displayName: 'Building'
+- script: gradle run
+  displayName: 'Running'

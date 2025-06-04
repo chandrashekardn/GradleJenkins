@@ -7,7 +7,7 @@ pipeline{
 	stages{
 		stage('Checkout'){
 			steps{
-				git brach:'master',url:'https://github.com/chandrashekardn/GradleJenkins.git'
+				git branch:'master',url:'https://github.com/chandrashekardn/GradleJenkins.git'
 			}
 		}
 		stage('Build'){
